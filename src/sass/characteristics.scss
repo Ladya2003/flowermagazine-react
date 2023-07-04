@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "Montserrat-regular";
+    src: url(../font/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family:"Playfair" ;
+    src: url(../font/PlayfairDisplay.ttf);
+}
+html {
+    scroll-behavior: smooth;
+    background-image: url(../images/фон.jpg);
+    background-attachment: fixed;
+    padding: 5vw 0 0 0;
+    h1, h2, li, span, p {
+        font-family: "Montserrat-regular";
+    }
+    a:visited, a:link {
+        text-decoration: none;
+        color: inherit;
+    }
+    nav {
+        background-color: #e3d7d7e1;
+        margin: -15px -8px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li {
+                list-style-type: none;
+                transition: 0.3s;
+                img {
+                    margin-top: 1vw;
+                    width: 6vw;
+                }
+                &:hover {
+                    text-shadow: 0 0 5px rgba(240, 164, 230, 0.9);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    header {
+        background-color: rgba(234, 195, 195, 0.58);
+        margin: 12vw -8px 5vw -8px;
+        padding: 0;
+        h2 {
+            margin-left: 1.5vw;
+            font-size: 3vw;
+            font-weight: 100;
+            font-family:"Montserrat-regular";
+        }
+    }
+    table,td{
+        border: 0.2vw dashed black;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        vertical-align: top;
+    }
+    .tab2{
+        margin-top: 20px; 
+    }
+    td{
+        width:45vw ;
+        height: 50vw;
+        font-size: 1.2vw;
+    }
+    .bl{
+        background: rgba(119, 197, 222, 0.66);
+        font-family:"Playfair" ;
+        text-align: center;
+        
+    }
+    .pin{
+        background: rgba(201, 64, 250, 0.19);
+        font-family:"Playfair" ;
+        text-align: center;
+    }
+    table img{
+        border-radius: 20px;
+    }
+    .rose {
+        width: 18vw;
+        height: 25vw;
+    }
+    h1{
+        font-family: "Montserrat-regular";
+        margin-top: 0;
+    }
+    .txt{
+        text-align: left;
+    }
+    .circle{
+        margin-top: 0;
+    }
+
+    footer {
+        background-color: #E3D7D7;
+        margin: 10vw -8px -8px -8px;
+        padding: 2vw 0;
+        h2, p, span {
+            text-align: center;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                display: flex;
+                align-items: center;
+                transition: 0.4s;
+                &:hover {
+                    color:rgb(82, 54, 4);
+                    text-shadow: 0 0 8px rgba(236, 161, 76, 0.2);
+                    transform: scale(1.1);
+                    img {
+                        transform: scale(1.1);
+                        margin: 0 0.5vw 0 2vw;
+                    }
+                }
+                img {
+                    width: 3vw;
+                    margin: 0 0.8vw 0 1.5vw;
+                    transition: 0.4s;
+                }
+                .telegram-icon {
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        ul {
+            padding-left: 5vw;
+            li {
+                font-size: 2.5vw;
+                padding: 0 2vw 0 0;
+                img {
+                    margin-left: -2vw;
+                }
+            }
+        }
+    }
+    .txt {
+        font-size: 2.5vw;
+        margin: 4vw 2vw 0 -5vw;
+    }
+    table img {
+        width: 35vw;
+        height: 25vw;
+    }
+    li {
+        font-size: 3.5vw;
+    }
+    td {
+        font-size: 1.2vw;
+    }
+    footer {
+        h2 {
+            font-size: 3vw;
+        }
+        p {
+            font-size: 2vw;
+        }
+        span {
+            font-size: 2.7vw;
+        }
+    }
+}
+@media (min-width: 480px) {
+    nav {
+        ul {
+            padding-right: 0;
+            li {
+                font-size: 1.8vw;
+                img {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    table img {
+        width: 22vw;
+        height: 16vw;
+    }
+    td {
+        font-size: 1.2vw;
+    }
+    footer {
+        h2 {
+            font-size: 2vw;
+        }
+        p {
+            font-size: 1.5vw;
+        }
+        span {
+            font-size: 1.8vw;
+        }
+    }
+}
+ 
+ 

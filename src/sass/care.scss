@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "Montserrat-regular";
+    src: url(../font/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family:"Playfair" ;
+    src: url(../font/PlayfairDisplay.ttf);
+}
+html {
+    scroll-behavior: smooth;
+    background-image: url(../images/фон.jpg);
+    background-attachment: fixed;
+    h1, h2, li, span, p {
+        font-family: "Montserrat-regular";
+    }
+    a:visited, a:link {
+        text-decoration: none;
+        color: inherit;
+    }
+    nav {
+        background-color: #e3d7d7e1;
+        margin: -15px -8px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li {
+                list-style-type: none;
+                transition: 0.3s;
+                img {
+                    margin-top: 1vw;
+                    width: 6vw;
+                }
+                &:hover {
+                    text-shadow: 0 0 5px rgba(240, 164, 230, 0.9);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    header {
+        background-color: rgba(234, 195, 195, 0.58);
+        margin: 12vw -8px 0 -8px;
+        h2 {
+            margin-left: 1.5vw;
+            font-size: 3vw;
+            font-weight: 100;
+            font-family:"Montserrat-regular";
+        }
+    }
+    .care_header {
+        text-align: center;
+        background-color: #EAC3C3;
+        width: 40vw;
+        margin: 4vw auto;
+        padding: 0.7vw;
+        border-radius: 2vw;
+    }
+    .flower1, .flower2 {
+        margin: 0 0 5vw 0;
+        background-color: #fcfcfcc4;
+        padding: 0.2vw;
+        margin: 0 -8px;
+        &:nth-child(odd) {  // для четных блоков
+            background-color: #eac3c3c4;
+            padding: 0.2vw;
+            margin: 0 -8px;
+        }
+        h1 {
+            margin-left: 2vw;
+            font-weight: 100;
+        }
+        .flower_content {
+            display: flex;
+            align-items: center;
+            img {
+                float: left;
+                margin: 0 2vw 1vw 2vw;
+                border-radius: 2vw;
+                box-shadow: 0px 10px 50px 10px rgba(182, 44, 232, 0.8);
+            }
+            .rom {
+                width: 18vw;
+            }
+            .gia {
+                width: 15vw;
+            }
+            .rose {
+                width: 18vw;
+                height: 25vw;
+            }
+        }
+    }
+    .flower2 {
+        h1 {
+            text-align: center;
+        }
+        .flower_content {
+            justify-content: flex-end;
+        }
+        img {
+            float: right;
+            margin: 0 2vw 1vw 2vw;
+        }
+    }
+    footer {
+        background-color: #E3D7D7;
+        margin: 10vw -8px -8px -8px;
+        padding: 2vw 0;
+        h2, p, span {
+            text-align: center;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                display: flex;
+                align-items: center;
+                transition: 0.4s;
+                &:hover {
+                    color:rgb(82, 54, 4);
+                    text-shadow: 0 0 8px rgba(236, 161, 76, 0.2);
+                    transform: scale(1.1);
+                    img {
+                        transform: scale(1.1);
+                        margin: 0 0.5vw 0 2vw;
+                    }
+                }
+                img {
+                    width: 3vw;
+                    margin: 0 0.8vw 0 1.5vw;
+                    transition: 0.4s;
+                }
+                .telegram-icon {
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    nav {
+        ul {
+            padding-left: 5vw;
+            li {
+                font-size: 2.5vw;
+                padding: 0 2vw 0 0;
+                img {
+                    margin-left: -2vw;
+                }
+            }
+        }
+    }
+    .care_header {
+        font-size: 3.3vw;
+    }
+    .flower1, .flower2 {
+        h1 {
+            font-size: 3.5vw;
+        }
+    }
+    .flower_content {
+        img {
+            width: 30vw;
+            height: 22vw;
+        }
+        ol li {
+            font-weight: 500;
+            font-size: 3vw;
+            margin-bottom: 2vw;
+        }
+        .gia {
+            height: 18vw;
+        }
+    }
+    footer {
+        h2 {
+            font-size: 3vw;
+        }
+        p {
+            font-size: 2vw;
+        }
+        span {
+            font-size: 2.7vw;
+        }
+    }
+}
+@media (min-width: 480px) {
+    nav {
+        ul {
+            padding-right: 0;
+            li {
+                font-size: 1.8vw;
+                img {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .care_header {
+        font-size: 2.3vw;
+    }
+    .flower1, .flower2 {
+        h1 {
+            font-size: 2.2vw;
+        }
+    }
+    .flower_content {
+        img {
+            width: 22vw;
+            height: 16vw;
+        }
+        ol li {
+            font-weight: 500;
+            font-size: 1.2vw;
+        }
+        .gia {
+            width: 15vw;
+        }
+    }
+    footer {
+        h2 {
+            font-size: 2vw;
+        }
+        p {
+            font-size: 1.5vw;
+        }
+        span {
+            font-size: 1.8vw;
+        }
+    }
+}

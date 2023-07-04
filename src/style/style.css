@@ -1,0 +1,364 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat-regular";
+  src: url(../font/Montserrat-Regular.ttf);
+}
+.toggle-theme {
+  font-size: 1.3vw;
+}
+body {
+  scroll-behavior: smooth;
+  background-image: url(../images/фон.jpg);
+  background-color: #000000be;
+  background-attachment: fixed;
+}
+.html-container, .html-container2 {
+  background-color: inherit;
+}
+.html-container h1, .html-container h2, .html-container h3, .html-container li, .html-container figcaption, .html-container label, .html-container select, .html-container input, .html-container span, .html-container p {
+  font-family: "Montserrat-regular";
+}
+.html-container a:visited, .html-container a:link {
+  text-decoration: none;
+  color: inherit;
+}
+.html-container nav {
+  background-color: rgba(227, 215, 215, 0.8823529412);
+  margin: -15px 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  color: black !important;
+}
+.html-container nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.html-container nav ul li {
+  list-style-type: none;
+  transition: 0.3s;
+}
+.html-container nav ul li img {
+  margin: 1vw 5vw 0 0;
+  width: 6vw;
+}
+.html-container nav ul li:hover {
+  text-shadow: 0 0 5px rgba(240, 164, 230, 0.9);
+  cursor: pointer;
+}
+.html-container .mainpageHeader {
+  background-color: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.html-container .mainpageHeader h1 {
+  font-size: 4vw;
+}
+.html-container .mainpageHeader .header__img {
+  -webkit-animation: header-anim 15s linear infinite alternate;
+          animation: header-anim 15s linear infinite alternate;
+  width: 30vw;
+  height: 30vw;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.445);
+}
+.html-container .choose {
+  padding-top: 5vw;
+}
+.html-container .choose h1 {
+  text-align: center;
+  margin-bottom: 5vw;
+  font-size: 3vw;
+}
+.html-container .choose .flowers {
+  display: flex;
+  flex-direction: column;
+}
+.html-container .choose .flowers .photo_1-3, .html-container .choose .flowers .photo_4-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.html-container .choose .flowers .photo_1-3 figure img, .html-container .choose .flowers .photo_4-6 figure img {
+  width: 20vw;
+  border-radius: 2vw;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+.html-container .choose .flowers .photo_1-3 figure img:hover, .html-container .choose .flowers .photo_4-6 figure img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(163, 41, 41, 0.5);
+}
+.html-container .choose .flowers .photo_1-3 figure figcaption, .html-container .choose .flowers .photo_4-6 figure figcaption {
+  margin-top: 1vw;
+  text-align: center;
+}
+.html-container form {
+  color: black !important;
+  display: flex;
+  flex-direction: column;
+  margin: 6vw auto;
+  background-color: #F0DEFC;
+  border-radius: 2vw;
+  box-shadow: 0 0 5px rgb(184, 5, 184);
+  padding: 2vw;
+  transition: 0.3s;
+}
+.html-container form:hover {
+  box-shadow: 0 0 15px rgb(184, 5, 184);
+  background-color: #ead4f8;
+}
+.html-container form h2 {
+  text-align: center;
+  margin-bottom: 3vw;
+}
+.html-container form div {
+  display: flex;
+  margin: 0.5vw;
+}
+.html-container form div label {
+  display: block;
+}
+.html-container form div input, .html-container form div select {
+  border-radius: 1vw;
+  padding: 0.5vw;
+  border: 1px solid black;
+}
+.html-container form div .radio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20vw;
+}
+.html-container form div .radio input[type=radio] {
+  width: 2vw;
+  height: 2vw;
+}
+.submit-button {
+  display: flex;
+  justify-content: space-around;
+}
+.html-container form div input[type=submit] {
+  margin: 3vw auto 0 auto;
+  width: 20vw;
+  background-color: #d49ff8;
+  font-size: 1.5vw;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.html-container form div input[type=submit]:hover {
+  background-color: #cb88f8;
+  color: white;
+}
+.html-container form div input[type=submit]:active {
+  background-color: #bf6af8;
+}
+.html-container footer {
+  background-color: #E3D7D7;
+  width: 100%;
+  color: black !important;
+}
+.html-container footer h2, .html-container footer p, .html-container footer span {
+  text-align: center;
+}
+.html-container footer .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.html-container footer .social-media a {
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+}
+.html-container footer .social-media a:hover {
+  color: rgb(82, 54, 4);
+  text-shadow: 0 0 8px rgba(236, 161, 76, 0.2);
+  transform: scale(1.1);
+}
+.html-container footer .social-media a:hover img {
+  transform: scale(1.1);
+  margin: 0 0.5vw 0 2vw;
+}
+.html-container footer .social-media a img {
+  width: 3vw;
+  margin: 0 0.8vw 0 1.5vw;
+  transition: 0.4s;
+}
+
+/*  */
+
+.autofill-input {
+  margin: 3vw auto 0 auto;
+  width: 20vw;
+  background-color: #d49ff8;
+  font-size: 1.5vw;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.autofill-input:hover {
+  background-color: #cb88f8;
+  color: white;
+}
+
+
+.flower1 {
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  nav ul {
+    padding-right: 5vw;
+  }
+  nav ul li {
+    font-size: 2.5vw;
+  }
+  header {
+    margin: 0;
+    padding: 15vw 0;
+  }
+  .choose figcaption {
+    font-size: 3vw;
+  }
+  form {
+    width: 90vw;
+  }
+  form h2 {
+    font-size: 4.5vw;
+  }
+  form label, form input, form select, form span {
+    font-size: 4vw;
+  }
+  form label {
+    width: 35vw;
+  }
+  form input {
+    width: 30vw;
+  }
+  footer {
+    padding: 1vw 0 8vw 0;
+  }
+  footer h2 {
+    font-size: 2.5vw;
+  }
+  footer p {
+    font-size: 2.2vw;
+  }
+  footer span {
+    font-size: 2.4vw;
+  }
+}
+@media (min-width: 600px) {
+  nav ul {
+    padding-right: 0;
+  }
+  nav ul li {
+    font-size: 1.8vw;
+  }
+  header {
+    margin: 0;
+    padding: 15vw 0 10vw 0;
+  }
+  .choose figcaption {
+    font-size: 1.5vw;
+  }
+  form {
+    width: 50vw;
+  }
+  form h2 {
+    font-size: 1.9vw;
+  }
+  form label, form input, form select, form span {
+    font-size: 1.3vw;
+  }
+  form label {
+    width: 25vw;
+  }
+  form input {
+    width: 20vw;
+  }
+  footer {
+    padding: 1vw 0 4vw 0;
+    margin: 0 -8px -8px -8px;
+  }
+  footer h2 {
+    font-size: 2vw;
+  }
+  footer p {
+    font-size: 1.5vw;
+  }
+  footer span {
+    font-size: 1.8vw;
+  }
+}
+@-webkit-keyframes header-anim {
+  from {
+    background-image: url(../images/header-img.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+  }
+  25% {
+    background-image: url(../images/6.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+  }
+  50% {
+    background-image: url(../images/5.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+  }
+  75% {
+    background-image: url(../images/4.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+  }
+  to {
+    background-image: url(../images/3.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+  }
+}
+@keyframes header-anim {
+  from {
+    background-image: url(../images/header-img.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+  }
+  25% {
+    background-image: url(../images/6.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+  }
+  50% {
+    background-image: url(../images/5.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+  }
+  75% {
+    background-image: url(../images/4.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+  }
+  to {
+    background-image: url(../images/3.jpg);
+    background-size: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+  }
+}/*# sourceMappingURL=style.css.map */

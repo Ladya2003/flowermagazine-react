@@ -1,0 +1,55 @@
+﻿*{
+    background-color: antiquewhite;
+}
+FLOWERS {
+    display: block;
+}
+MYFL{
+    border: 1px solid black;
+    display: block;
+
+   height: 100px;
+   text-align: center;
+
+   font-size: 15pt;
+}
+
+SPECIALIZATION {
+    display: block;
+    text-align: center;
+    margin-top: 12pt;
+    font-size: 15pt;
+}
+
+
+NAME {
+    font-style: italic;
+    text-align: center;
+}
+
+COLOR {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+LIGHT {
+    display: block;
+    text-align: center;
+}
+
+
+/*ALL {
+    display: block;
+    margin: 50px 350px;
+    border-style: solid 2px black;
+    border-color: black;
+}*/
+
+FLOWER {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    
+}

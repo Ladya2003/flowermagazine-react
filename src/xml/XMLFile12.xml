@@ -1,0 +1,35 @@
+﻿   <?xmlversion "1.0" encoding="utf-8"?>
+   <?xml-stylesheet type="text/css" href="1.css"?>
+	<FLOWERS> 
+		<MYFL>
+			<NAME>Тюльпан</NAME>
+			<COLOR>Цвет:фиолетовый</COLOR>
+			<LIGHT>Светолюбивый</LIGHT>
+		</MYFL>
+		<MYFL>
+			<NAME>Пион</NAME>
+			<COLOR>Цвет:розовый</COLOR>
+			<LIGHT>Светолюбивый</LIGHT>
+		</MYFL>
+		<MYFL>
+			<NAME>Ромашка</NAME>
+			<COLOR>Цвет:белый</COLOR>
+			<LIGHT>Светолюбивый</LIGHT>
+		</MYFL>
+		<MYFL>
+			<NAME>Гладиолус</NAME>
+			<COLOR>Цвет:разный</COLOR>
+			<LIGHT>Светолюбивый</LIGHT>
+		</MYFL>
+		<MYFL>
+			<NAME>Гиацинт</NAME>
+			<COLOR>Цвет:разный</COLOR>
+			<LIGHT>Светолюбивый</LIGHT>
+		</MYFL>
+		<MYFL>
+			<NAME>Роза</NAME>
+			<COLOR>Цвет:красный</COLOR>
+			<LIGHT>Светолюбивый</LIGHT>
+		</MYFL>
+
+	</FLOWERS>

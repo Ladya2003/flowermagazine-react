@@ -1,0 +1,304 @@
+@font-face {
+    font-family:"Montserrat-regular" ;
+    src: url(../font/Montserrat-Regular.ttf);
+}
+.html-container {
+    scroll-behavior: smooth;
+    background-image: url(../images/фон.jpg);
+    background-attachment: fixed;
+    h1, h2, h3, li, figcaption, label, select, input, span, p {
+        font-family: "Montserrat-regular";
+    }
+    a:visited, a:link {
+        text-decoration: none;
+        color: inherit;
+    }
+    nav {
+        background-color: #e3d7d7e1;
+        margin: -15px 0;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        top: 0;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li {
+                list-style-type: none;
+                transition: 0.3s;
+                img {
+                    margin: 1vw 5vw 0 0;
+                    width: 6vw;
+                }
+                &:hover {
+                    text-shadow: 0 0 5px rgba(240, 164, 230, 0.9);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .mainpageHeader {
+        background-color: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        h1 {
+            font-size: 4vw;
+        }
+        .header__img {
+            animation: header-anim 15s linear infinite alternate;
+            width: 30vw;
+            height: 30vw;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.445);
+        }
+    }
+    .choose {
+        padding-top: 5vw;
+        h1 {
+            text-align: center;
+            margin-bottom: 5vw; 
+            font-size: 3vw;
+        }
+        .flowers {
+            display: flex;
+            flex-direction: column;
+            .photo_1-3, .photo_4-6 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                figure {
+                    img {
+                        width: 20vw;
+                        border-radius: 2vw;
+                        transition: 0.3s;
+                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+                        z-index: -1;
+                        &:hover {
+                            transform: scale(1.1);
+                            box-shadow: 0 0 20px rgba(163, 41, 41, 0.5);
+                        }
+                    }
+                    figcaption {
+                        margin-top: 1vw;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 6vw auto;
+        background-color: #F0DEFC;
+        border-radius: 2vw;
+        box-shadow: 0 0 5px rgb(184, 5, 184);
+        padding: 2vw;
+        transition: 0.3s;
+        &:hover {
+            box-shadow: 0 0 15px rgb(184, 5, 184);
+            background-color: #ead4f8;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 3vw;
+        }
+        div {
+            display: flex;
+            margin: 0.5vw;
+            label{
+                display: block;
+            }
+            input, select {
+                border-radius: 1vw;
+                padding: 0.5vw;
+                border: 1px solid black;
+            }
+            .radio {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 20vw;
+                input[type="radio"] {
+                    width: 2vw;
+                    height: 2vw;
+                }
+            }
+            input[type="submit"] {
+                margin: 3vw auto 0 auto;
+                width: 20vw;
+                background-color: #d49ff8;
+                font-size: 1.5vw;
+                transition: 0.3s;
+                &:hover {
+                    background-color: #cb88f8;
+                    color: white;
+                }
+                &:active {
+                    background-color: #bf6af8;
+                }
+            }
+        }
+    }
+    footer {
+        background-color: #E3D7D7;
+        width: 100%;
+        h2, p, span {
+            text-align: center;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                display: flex;
+                align-items: center;
+                transition: 0.4s;
+                &:hover {
+                    color:rgb(82, 54, 4);
+                    text-shadow: 0 0 8px rgba(236, 161, 76, 0.2);
+                    transform: scale(1.1);
+                    img {
+                        transform: scale(1.1);
+                        margin: 0 0.5vw 0 2vw;
+                    }
+                }
+                img {
+                    width: 3vw;
+                    margin: 0 0.8vw 0 1.5vw;
+                    transition: 0.4s;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        ul {
+            padding-right: 5vw;
+            li {
+                font-size: 2.5vw;
+            }
+        }
+    }
+    header {
+        margin: 0;
+        padding: 15vw 0;
+    }
+    .choose {
+        figcaption {
+            font-size: 3vw;
+        }
+    }
+    form {
+        width: 90vw;
+        h2 {
+            font-size: 4.5vw;
+        }
+        label, input, select, span {
+            font-size: 4vw;
+        }
+        label {
+            width: 35vw;
+        }
+        input {
+            width: 30vw;
+        }
+    }
+    footer {
+        padding: 1vw 0 8vw 0;
+        h2 {
+            font-size: 2.5vw;
+        }
+        p {
+            font-size: 2.2vw;
+        }
+        span {
+            font-size: 2.4vw;
+        }
+    }
+}
+@media (min-width: 600px) {
+    nav {
+        ul {
+            padding-right: 0;
+            li {
+                font-size: 1.8vw;
+            }
+        }
+    }
+    header {
+        margin: 0;
+        padding: 15vw 0 10vw 0;
+    }
+    .choose {
+        figcaption {
+            font-size: 1.5vw;
+        }
+    }
+    form {
+        width: 50vw;
+        h2 {
+            font-size: 1.9vw;
+        }
+        label, input, select, span {
+            font-size: 1.3vw;
+        }
+        label {
+            width: 25vw;
+        }
+        input {
+            width: 20vw;
+        }
+    }
+    footer {
+        padding: 1vw 0 4vw 0;
+        margin: 0 -8px -8px -8px;
+        h2 {
+            font-size: 2vw;
+        }
+        p {
+            font-size: 1.5vw;
+        }
+        span {
+            font-size: 1.8vw;
+        }
+    }
+}
+
+@keyframes header-anim {
+    from {
+      background-image: url(../images/header-img.jpg);
+      background-size: 100%;
+      border-radius: 20px;
+      background-repeat: no-repeat;
+    }
+    25% {
+      background-image: url(../images/6.jpg);
+      background-size: 100%;
+      border-radius: 20px;
+      background-repeat: no-repeat;
+    }
+    50% {
+      background-image: url(../images/5.jpg);
+      background-size: 100%;
+      border-radius: 20px;
+      background-repeat: no-repeat;
+    }
+    75% {
+      background-image: url(../images/4.jpg);
+      background-size: 100%;
+      border-radius: 20px;
+      background-repeat: no-repeat;
+    }
+    to {
+      background-image: url(../images/3.jpg);
+      background-size: 100%;
+      border-radius: 20px;
+      background-repeat: no-repeat;
+    }
+  }

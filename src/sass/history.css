@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat-regular";
+  src: url(../font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url(../font/PlayfairDisplay.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-image: url(../images/фон.jpg);
+  background-attachment: fixed;
+}
+
+html h1, html h2, html li, html p, html span {
+  font-family: "Montserrat-regular";
+}
+
+html a:visited, html a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+html nav {
+  background-color: #e3d7d7e1;
+  margin: -15px -8px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+html nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html nav ul li {
+  list-style-type: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+html nav ul li img {
+  margin-top: 1vw;
+  width: 6vw;
+}
+
+html nav ul li:hover {
+  text-shadow: 0 0 5px rgba(240, 164, 230, 0.9);
+  cursor: pointer;
+}
+
+html header {
+  background-color: rgba(234, 195, 195, 0.58);
+  margin: 12vw -8px 0 -8px;
+}
+
+html header h2 {
+  margin-left: 1.5vw;
+  font-weight: 100;
+  font-family: "Montserrat-regular";
+}
+
+html .flower {
+  margin-top: 7vw;
+}
+
+html .flower h2 {
+  text-align: center;
+}
+
+html .flower p {
+  font-family: "Playfair";
+  text-align: justify;
+  text-indent: 2vw;
+  margin: 0 2vw;
+}
+
+html .flower p img {
+  border-radius: 2vw;
+  margin: 0 2vw 2vw 2vw;
+  -webkit-box-shadow: 0px 10px 50px 10px rgba(182, 44, 232, 0.8);
+          box-shadow: 0px 10px 50px 10px rgba(182, 44, 232, 0.8);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+html .flower p .img_left {
+  float: left;
+}
+
+html .flower p .img_right {
+  float: right;
+}
+
+html .flower p .rose {
+  width: 18vw;
+  height: 25vw;
+}
+
+html footer {
+  background-color: #E3D7D7;
+  margin: 25vw -8px -8px -8px;
+  padding: 2vw 0;
+}
+
+html footer h2, html footer p, html footer span {
+  text-align: center;
+}
+
+html footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html footer .social-media a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+html footer .social-media a:hover {
+  color: #523604;
+  text-shadow: 0 0 8px rgba(236, 161, 76, 0.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+html footer .social-media a:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  margin: 0 0.5vw 0 2vw;
+}
+
+html footer .social-media a img {
+  width: 3vw;
+  margin: 0 0.8vw 0 1.5vw;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    padding-left: 5vw;
+  }
+  nav ul li {
+    font-size: 2.5vw;
+    padding: 0 2vw 0 0;
+  }
+  nav ul li img {
+    margin-left: -2vw;
+  }
+  header h2 {
+    font-size: 3.8vw;
+  }
+  .flower h2 {
+    font-size: 3.8vw;
+  }
+  .flower p {
+    font-size: 3.5vw;
+  }
+  .flower img {
+    width: 30vw;
+    height: 23vw;
+  }
+  footer h2 {
+    font-size: 3vw;
+  }
+  footer p {
+    font-size: 2vw;
+  }
+  footer span {
+    font-size: 2.7vw;
+  }
+}
+
+@media (min-width: 600px) {
+  nav ul {
+    padding-right: 0;
+  }
+  nav ul li {
+    font-size: 1.8vw;
+  }
+  nav ul li img {
+    margin-right: 0;
+  }
+  header h2 {
+    font-size: 3vw;
+  }
+  .flower h2 {
+    font-size: 3vw;
+  }
+  .flower p {
+    font-size: 1.5vw;
+  }
+  .flower img {
+    width: 22vw;
+    height: 16vw;
+  }
+  footer h2 {
+    font-size: 2vw;
+  }
+  footer p {
+    font-size: 1.5vw;
+  }
+  footer span {
+    font-size: 1.8vw;
+  }
+}
+/*# sourceMappingURL=history.css.map */
